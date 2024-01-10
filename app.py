@@ -39,7 +39,9 @@ if press_button:
             try:
                 response = requests.request("POST", url, headers=headers, data=payload)
                 response_data = response.json()
-                generated_image = response_data["result"]["generated_image"]
+                generated_image_str = response_data["result"]["generated_image"]
+                generated_image_bytes = base64.b64decode(generated_image_str)
+                generated_image = Image.open(io.BytesIO(generated_image_bytes)).convert("RGB")
                 st.write("Result:")
                 st.write(generated_image)
             except:
