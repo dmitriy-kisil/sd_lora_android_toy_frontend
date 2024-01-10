@@ -17,7 +17,7 @@ headers = {
 
 st.set_page_config(initial_sidebar_state="collapsed")
 
-st.title("Image to text frontend app")
+st.title("App for generating a green android toy")
 
 prompt = st.text_input("Provide prompt", value="An android toy near the Eiffel Tower")
 
