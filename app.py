@@ -18,7 +18,7 @@ st.set_page_config(initial_sidebar_state="collapsed")
 
 st.title("Image to text frontend app")
 
-prompt = st.text_input("Provide prompt", value="Provide a detailed description for the image", default="")
+prompt = st.text_input("Provide prompt")
 
 seed = st.sidebar.slider(label='seed', min_value=1, max_value=100, value=42, step=1)
 num_inference_steps = st.sidebar.slider(label='number of inference steps', min_value=1, max_value=100, value=50, step=1)
