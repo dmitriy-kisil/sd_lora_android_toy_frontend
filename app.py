@@ -44,7 +44,7 @@ if press_button:
                 generated_image_bytes = base64.b64decode(generated_image_str)
                 generated_image = Image.open(io.BytesIO(generated_image_bytes)).convert("RGB")
                 st.write("Result:")
-                st.write(generated_image)
+                st.image(generated_image)
             except:
                 st.error("There is no response, try again later")
     else:
