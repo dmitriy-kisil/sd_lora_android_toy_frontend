@@ -4,6 +4,7 @@ import base64
 import json
 import requests
 import streamlit as st
+from PIL import Image
 
 
 auth_key = os.environ["AUTH_KEY"]
