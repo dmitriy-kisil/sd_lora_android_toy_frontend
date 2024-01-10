@@ -18,7 +18,7 @@ st.set_page_config(initial_sidebar_state="collapsed")
 
 st.title("Image to text frontend app")
 
-prompt = st.text_input("Provide prompt")
+prompt = st.text_input("Provide prompt", value="An android toy near the Eiffel Tower")
 
 temperature = st.sidebar.slider(label='temperature', min_value=0.1, max_value=5.0, value=1.0, step=0.1)
 guidance_scale = st.sidebar.slider(label='guidance scale', min_value=0.1, max_value=15.0, value=7.5, step=0.1)
