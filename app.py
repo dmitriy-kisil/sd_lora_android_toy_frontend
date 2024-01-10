@@ -21,7 +21,7 @@ st.title("Image to text frontend app")
 prompt = st.text_input("Provide prompt")
 
 temperature = st.sidebar.slider(label='temperature', min_value=0.1, max_value=5.0, value=1.0, step=0.1)
-guidance_scale = st.sidebar.slider(label='guidance scale', min_value=0.1, max_value=0.1, value=7.5, step=15.0)
+guidance_scale = st.sidebar.slider(label='guidance scale', min_value=0.1, max_value=15.0, value=7.5, step=0.1)
 num_inference_steps = st.sidebar.slider(label='number of inference steps', min_value=1, max_value=100, value=50, step=1)
 seed = st.sidebar.slider(label='seed', min_value=1, max_value=100, value=42, step=1)
 
